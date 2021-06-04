@@ -1,0 +1,14 @@
+.badge {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  /* width의 반절 15px를 해주어도 테두리가 원으로 바뀐다.*/
+  border-radius: 50%;
+
+  /* 안에 있는 글자를 가운데로 오게 하기위함 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}

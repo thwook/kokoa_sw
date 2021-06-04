@@ -1,0 +1,51 @@
+.screen-header {
+  display: flex; /*나란히 정렬하기 */
+  justify-content: space-between;
+  align-items: center; /* 가운데 정렬하기 */
+  padding: var(--horizontal-space);
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px; /* Friends 크기 */
+  font-weight: 600; /* 글자 굵기 */
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
+
+.screen-header__icons {
+  position: relative;
+}
+
+@keyframes rotateMusic {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: rotateMusic 0.5s linear infinite;
+}
+
+/*screen-header에 있는 설정(톱니바퀴)모양 돌아가기 */
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 3s linear infinite;
+}

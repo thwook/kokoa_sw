@@ -1,0 +1,21 @@
+.cog__set-find {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  left: 70px; /*오른쪽으로 이동*/
+  bottom: 20px; /*위로 이동*/
+}
+
+.cog__set-more {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  left: 120px; /*오른쪽으로 이동*/
+  bottom: 20px; /*위로 이동*/
+}

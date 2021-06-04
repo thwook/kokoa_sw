@@ -1,0 +1,23 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting i {
+  opacity: 0.85;
+  margin-right: 17px;
+  font-size: 17px;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.75;
+}
+
+/* status-bar랑 겹치지 않게 하기 위해서 넣어줌 or status-bar.css에서 fixed를 삭제해줘도 비슷함.*/
+.settings_body {
+  padding-top: 10px;
+}

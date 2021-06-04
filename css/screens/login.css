@@ -1,0 +1,40 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.login-form__input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.login-form__btn {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 20px;
+  border: 1.5x solid black;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease-in-out;
+  align-items: center; /* 이거 없어도 가운데 정렬됨 왜이러지.? */
+}
+
+.Login-form__input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.login-form__input:focus {
+  border-color: var(--yellow);
+}
+
+.login-form__a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}

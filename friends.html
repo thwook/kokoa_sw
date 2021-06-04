@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+          </svg>
+        </div>
+      <!-- WIFI Icon -->
+        <div class="status-bar__column">
+          <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+          <span>110%</span>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <i class="fas fa-bolt"></i> 
+          <!-- battery Icon-->
+          <!-- Lightning Icon-->
+        </div>
+    </div>
+
+    <!-- 돋보기, 음악, 설정 부분 header-->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1> 
+        <div class="screen-header__icons">
+           <!-- 돋보기 아이콘-->
+           <span><i class="fas fa-search fa-lg"></i></span>
+           <!-- 뮤직 아이콘-->
+           <span><i class="fas fa-music fa-lg"></i></span>
+           <!-- 설정 아이콘-->
+           <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
+        </div>  
+    </header>
+
+
+    <!-- 친구찾기 창-->
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i> Friends' Names Display 
+    <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+   
+    <!-- Friends와 같은 padding값을 주기 위해서 main으로 묶음-->
+    <main class="friends-screen">
+      <div class="user-component">
+        <!-- 프로필 사진, 이름 부분-->
+        <div class="user-component__column">
+          <img 
+          src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/133570913_2253121104820137_5149196380417772206_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=FQS55dtcaEIAX8iO-eK&_nc_ht=scontent-ssn1-1.xx&oh=e6f58567a3389083f25c644b9823227e&oe=60D08FEB" 
+          class="user-component__avatar user-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Sung Wook</h4>
+            <!-- 부제목 -->
+          <!--  <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img 
+            src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/133570913_2253121104820137_5149196380417772206_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=FQS55dtcaEIAX8iO-eK&_nc_ht=scontent-ssn1-1.xx&oh=e6f58567a3389083f25c644b9823227e&oe=60D08FEB" 
+            class="user-component__avatar user-component__avatar--sm" />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div> <!-- div를 하나 더 생성해서 father의 flex의 방향에 영향을 받지 않게끔 만들어주었다-->
+              <span>2</span><i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- 밑에 고정된 nav바.-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fas fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                <span class="nav__notification badge">1</span>
+                <i class="far fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                <span class="nav__set"></span>
+                <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="splash-screen">
+      <i class="fas fa-comment fa"></i>
+    </div>
+
+    <div class="no-mobile">
+      <span>Your screen is super big. plz change :)
+      </span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

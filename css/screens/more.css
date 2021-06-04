@@ -1,0 +1,72 @@
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
+}
+
+.more-suggestions__title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.more-suggestions__icons {
+  display: flex;
+}
+
+.more-suggestions__icon {
+  /*icon-image와 icon-text를 가지고 있음 = > father */
+  margin: 0 30px;
+  display: flex; /* father이기때문 */
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-suggestions__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.more-suggestions__icon-image2 {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(67, 231, 89);
+}
+
+.more-suggestions__icon-image3 {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: white;
+  background-color: rgb(37, 57, 238);
+}
+
+.more-suggestion__icon-text {
+  font-weight: 500;
+}

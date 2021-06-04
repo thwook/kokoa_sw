@@ -1,0 +1,81 @@
+.nav {
+  /* 아래에 고정되게 끔 만드는 코드 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /* 마법의 한줄 */
+  border-top: 1px solid rgba(163, 160, 160, 0.4);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: inherit;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translatey(-5px) /*아래로 움직임*/ rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__notification {
+  /* 메세지 아이콘위에 알람1이 들어오게(겹치게 만드는 코드)
+  오른쪽 상단에 오게 만들기*/
+  position: absolute; /* 가장 가까운 relative를 가진 부모 기준으로 움직이기 */
+  left: 15px;
+  bottom: 15px;
+  /* 여기서 right:5px를 하면 body에서 5px만큼 움직이기 때문에 쓰면안된다.*/
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.nav__set {
+  /* span class="nav__set" */
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px; /*오른쪽으로 이동*/
+  bottom: 25px; /*위로 이동*/
+}
+
+/*아래에서 위로 올라오기 nav__btn (nav bar) */
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  transform: translatey(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.9s;
+}

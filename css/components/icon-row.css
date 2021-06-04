@@ -1,0 +1,34 @@
+.icon-row {
+  display: flex; /* 한줄로 정렬 */
+  /*justify-content: space-between; 공간크기에 맞춰서 정렬 */
+  flex-wrap: wrap; /* 사이즈에 맞춰서 작아지면 다음줄로 넘어감 */
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  /* row를 쓰면 옆으로 오고 column을 쓰면 다음 줄에 옴
+    Cross Axis랑 Main Axis가 바뀌었다.(flex-direction)에 따라 바뀐다.
+    Main Axis는 세로축이고 Cross Axis는 가로축.
+    Cross Axis에서 바뀌는 것이 중요하므로 align-items:center;를 해준다
+  */
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: color 0.3s ease-in-out;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-row__icon:hover {
+  cursor: pointer;
+  color: black;
+}
+.icon-row__icon i {
+  /*해당속성 안에 있는 아이콘에만 적용되도록 */
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 15px;
+}

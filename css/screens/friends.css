@@ -1,0 +1,63 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  /*width, height 설정가능, margin, padding 가능, 상하로 배치
+  크기를 지정하지 않았을 경우, 가로는 100%, 세로는 내용만큼 아래로 내려감 
+  <a>태그는 in-line요소라서 크기를 지정하고 싶을때 사용.*/
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  /*screen-header.css에 margin-bottom을 추가된게 있어서 Friends스크린에서는 
+  안어울려서 따로 margin-top을 줌. Friends와 display사이의 간격*/
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    /* 마우스에 걸리지 않게 빠져나가는 코드
+    단순히 브라우저가 이 element를 무시할수 있도록 만들어 놓은 것 */
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute; /*모든 것의 위에 있다 */
+  width: 100vw; /*화면 넓이의 100%*/
+  height: 100vh; /*화면 높이의 100%*/
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  /* opacity :0; 으로 원래 호면이 보이지만 element가 남아있는상태 
+  forwards는 마지막 마지막 keyframes을 기억한다.*/
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}

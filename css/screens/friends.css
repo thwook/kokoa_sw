@@ -21,6 +21,31 @@
   padding: 0px var(--horizontal-space);
 }
 
+.user-component__channel {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--yellow);
+  margin-right: 20px;
+}
+.user-component__ch {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  align-items: center;
+  justify-content: center;
+}
+
 .friends-screen__channel {
   margin-top: 25px;
   border-top: var(--main-border);
